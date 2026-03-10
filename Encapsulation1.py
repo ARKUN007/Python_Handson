@@ -5,7 +5,8 @@ class Person:
     def get_age(self):
         return self.__age
     def set_age(self,age):
-        self.__age = age
+        if age>0:
+            self.__age = age
 p1 = Person("Avinash", 29)
 print(p1.name)
 #print(p1.age) this line will throw error because we have set age as provate
